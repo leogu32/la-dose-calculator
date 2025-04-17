@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LA Dose Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Local Anesthetic Dose Calculator</h1>
+
+    <label for="weight">Patient Weight (kg):</label>
+    <input type="number" id="weight" min="1" placeholder="e.g. 70">
+
+    <label for="drug">Select Drug:</label>
+    <select id="drug">
+      <option value="lidocaine">1% Lidocaine</option>
+      <option value="lidocaine_with_adrenaline">Lidocaine + Adrenaline</option>
+      <option value="bupivacaine_0_25">0.25% Bupivacaine</option>
+      <option value="bupivacaine_0_5">0.5% Bupivacaine</option>
+    </select>
+
+    <button onclick="calculateDose()">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
